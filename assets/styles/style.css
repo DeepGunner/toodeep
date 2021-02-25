@@ -259,6 +259,7 @@ Main Components
   justify-content: center;
   align-content: center;
   z-index: 12321;
+  background: red;
 }
 .cd-horizontal-timeline .events-content li {
   position: absolute;
