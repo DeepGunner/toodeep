@@ -430,6 +430,7 @@ Main Components
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row;
 }
 .col{
   flex-flow: column
@@ -457,4 +458,23 @@ Main Components
 .tick{
   width: 15px;
   margin-right: 10px;
+}
+
+.left{  
+  align-items: flex-start;
+}
+
+@media only screen and (min-device-width: 480px){
+  .flex-div{
+    flex-flow: column;
+  }
+}
+/* @media (min-width:480px)  {} */
+
+.ui-icon-loading {
+  display: none;
+}
+
+.img-high{
+  width: 350px;
 }
