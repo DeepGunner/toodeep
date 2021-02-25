@@ -51,9 +51,9 @@ $(document).ready(function($){
 				( mq == 'mobile' ) && showNewContent(timelineComponents, timelineTotWidth, 'next');
 			});
 
-			timelineComponents['eventsContent'].on('click', function(){
+			timelineComponents['eventsContent'].on('swiperight', function(){
 				var mq = checkMQ();
-				( mq == 'mobile' ) && showNewContent(timelineComponents, timelineTotWidth, 'next');
+				( mq == 'mobile' ) && showNewContent(timelineComponents, timelineTotWidth, 'prev');
 			});
 
 			//keyboard navigation
