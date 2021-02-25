@@ -14,7 +14,9 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+   font-family: segoe ui, helvetica neue, helvetica, arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
   color: #383838;
   background-color: #f8f8f8;
 }
@@ -77,13 +79,13 @@ Main Components
 }
 .cd-horizontal-timeline .events-wrapper::before {
   left: 0;
-  background-image: -webkit-linear-gradient( left , #f8f8f8, rgba(248, 248, 248, 0));
-  background-image: linear-gradient(to right, #f8f8f8, rgba(248, 248, 248, 0));
+  /* background-image: -webkit-linear-gradient( left , #f8f8f8, rgba(248, 248, 248, 0)); */
+  /* background-image: linear-gradient(to right, #f8f8f8, rgba(248, 248, 248, 0)); */
 }
 .cd-horizontal-timeline .events-wrapper::after {
   right: 0;
-  background-image: -webkit-linear-gradient( right , #f8f8f8, rgba(248, 248, 248, 0));
-  background-image: linear-gradient(to left, #f8f8f8, rgba(248, 248, 248, 0));
+  /* background-image: -webkit-linear-gradient( right , #f8f8f8, rgba(248, 248, 248, 0));
+  background-image: linear-gradient(to left, #f8f8f8, rgba(248, 248, 248, 0)); */
 }
 .cd-horizontal-timeline .events {
   /* this is the grey line/timeline */
@@ -249,12 +251,12 @@ Main Components
 .cd-horizontal-timeline .events-content {
   position: relative;
   width: 100%;
-  margin: 2em 0;
+  margin: 5em 0;
   overflow: hidden;
   -webkit-transition: height 0.4s;
   -moz-transition: height 0.4s;
   transition: height 0.4s;
-  min-height: 55vh;
+  min-height: 75vh;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -317,8 +319,9 @@ Main Components
 .cd-horizontal-timeline .events-content h2 {
   font-weight: bold;
   font-size: 2.6rem;
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
+  font-weight: 200;
+   font-family: segoe ui, helvetica neue, helvetica, arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
   line-height: 1.2;
 }
 .cd-horizontal-timeline .events-content em {
@@ -430,14 +433,15 @@ Main Components
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row;
+  flex-flow: row !important;
 }
 .col{
-  flex-flow: column
+  flex-flow: column !important;
 }
 
 .img-med{
   width: 290px;
+  margin-bottom: 50px;
 }
 
 /* .why-list li{
@@ -477,4 +481,17 @@ Main Components
 
 .img-high{
   width: 350px;
+}
+
+.ui-loader{
+  display: none;
+}
+.ui-corner-all{
+  display: none;
+}
+.ui-body-a{
+  display: none;
+}
+.ui-loader-default{
+  display: none;
 }
