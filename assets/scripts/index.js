@@ -51,6 +51,13 @@ $(document).ready(function($){
 				var mq = checkMQ();
 				( mq == 'mobile' ) && showNewContent(timelineComponents, timelineTotWidth, 'next');
 			});
+
+			timelineComponents['eventsContent'].on('click', function(){
+				alert('swiped')
+				var mq = checkMQ();
+				( mq == 'mobile' ) && showNewContent(timelineComponents, timelineTotWidth, 'next');
+			});
+
 			timelineComponents['eventsContent'].on('swiperight', function(){
 				alert('swiped')
 				var mq = checkMQ();
