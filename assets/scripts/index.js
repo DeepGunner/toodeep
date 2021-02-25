@@ -47,10 +47,12 @@ $(document).ready(function($){
 
 			//on swipe, show next/prev event content
 			timelineComponents['eventsContent'].on('swipeleft', function(){
+				alert('swiped')
 				var mq = checkMQ();
 				( mq == 'mobile' ) && showNewContent(timelineComponents, timelineTotWidth, 'next');
 			});
 			timelineComponents['eventsContent'].on('swiperight', function(){
+				alert('swiped')
 				var mq = checkMQ();
 				( mq == 'mobile' ) && showNewContent(timelineComponents, timelineTotWidth, 'prev');
 			});
@@ -271,6 +273,7 @@ $(document).ready(function($){
 	}
 
 	function checkMQ() {
+		debugger;
 		//check if mobile or desktop device
 		return window.getComputedStyle(document.querySelector('.cd-horizontal-timeline'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
 	}
