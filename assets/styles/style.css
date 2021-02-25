@@ -433,10 +433,10 @@ Main Components
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row !important;
+  flex-flow: row;
 }
 .col{
-  flex-flow: column !important;
+  flex-flow: column;
 }
 
 .img-med{
@@ -444,9 +444,14 @@ Main Components
   margin-bottom: 50px;
 }
 
-/* .why-list li{
-  position: relative;
-} */
+
+.img-gif{
+  margin-bottom: 50px !important;
+}
+
+.why-container span{
+    font-size: 240px !important;
+}
 
 .cd-horizontal-timeline .events-content .why-list li {
   position:initial;
@@ -468,12 +473,11 @@ Main Components
   align-items: flex-start;
 }
 
-@media only screen and (min-device-width: 480px){
+@media only screen and (min-width: 320px){
   .flex-div{
     flex-flow: column;
   }
 }
-/* @media (min-width:480px)  {} */
 
 .ui-icon-loading {
   display: none;
